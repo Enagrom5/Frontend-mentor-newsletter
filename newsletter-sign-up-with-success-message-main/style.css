@@ -1,0 +1,54 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+   justify-content: center;
+align-items: center;
+font-size: 16px;
+font: url(./assets/fonts/Roboto-Regular.ttf);
+    
+}
+.screen{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+h1{
+    text-align: center;
+    font: url(./assets/fonts/Roboto-Bold.ttf);
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+height: 20%;
+}
+ul li{
+    display: flex;
+    background-image: url(./assets/images/icon-list.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 2rem;
+    
+}
+.aftersubmit{
+   display: none; 
+}
+img{
+    height: 90vh;
+    width: 45vw;
+}
+form{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 30%;
+}
+label, input, button{
+    width: 100%;
+    height: 15%;
+    border-radius: 5px;
+}
