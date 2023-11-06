@@ -1,54 +1,76 @@
-body{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-   justify-content: center;
-align-items: center;
-font-size: 16px;
-font: url(./assets/fonts/Roboto-Regular.ttf);
-    
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: url(./assets/fonts/Roboto-Regular.ttf);
+  font-weight: 400;
+  color: hsl(235, 18%, 26%);
+  margin:0;
+ 
+  
 }
-.screen{
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    
+.screen {
+  height: 90%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 3rem;
 }
-h1{
-    text-align: center;
-    font: url(./assets/fonts/Roboto-Bold.ttf);
+h1 {
+  text-align: center;
+  font-family: url(./assets/fonts/Roboto-Bold.ttf);
+  color: hsl(234, 29%, 20%);
+  font-size: 5rem;
 }
-.list{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-height: 20%;
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 18%;
 }
-ul li{
-    display: flex;
-    background-image: url(./assets/images/icon-list.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding-left: 2rem;
-    
+ul li {
+  display: flex;
+  background-image: url(./assets/images/icon-list.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 2rem;
 }
-.aftersubmit{
-   display: none; 
+.aftersubmit {
+  display: none;
 }
-img{
-    height: 90vh;
-    width: 45vw;
+img {
+  height: 90vh;
+  width: 45vw;
 }
-form{
+p {
+   padding-left: 2.5rem; 
+}
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 30%;
+}
+label,
+input,
+button {
+  width: 86%;
+  height: 15%;
+  border-radius: 5px;
+}
+input {
+  color: hsl(231, 7%, 60%);
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    height: 30%;
+  border-color: hsl(231, 7%, 60%);
 }
-label, input, button{
-    width: 100%;
-    height: 15%;
-    border-radius: 5px;
+button {
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+}
+button:hover{
+    background-color: tomato;
+    border-color: tomato;
 }
