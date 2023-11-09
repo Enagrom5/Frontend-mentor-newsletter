@@ -1,76 +1,210 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(./assets/fonts/Roboto-Bold.ttf) format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Robotobis";
+  src: url(./assets/fonts/Roboto-Regular.ttf) format("truetype");
+  font-weight: 400;
+}
+
 body {
   width: 100vw;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: url(./assets/fonts/Roboto-Regular.ttf);
-  font-weight: 400;
-  color: hsl(235, 18%, 26%);
-  margin:0;
- 
-  
+  margin: 0;
 }
 .screen {
-  height: 90%;
-  width: 50%;
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding-left: 3rem;
+  align-items: center;
 }
-h1 {
-  text-align: center;
-  font-family: url(./assets/fonts/Roboto-Bold.ttf);
-  color: hsl(234, 29%, 20%);
-  font-size: 5rem;
+.bold{
+  font-family: "Roboto";
 }
-.list {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 18%;
-}
-ul li {
-  display: flex;
-  background-image: url(./assets/images/icon-list.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  padding-left: 2rem;
-}
-.aftersubmit {
-  display: none;
-}
-img {
-  height: 90vh;
-  width: 45vw;
-}
-p {
-   padding-left: 2.5rem; 
-}
-form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  height: 30%;
-}
-label,
-input,
-button {
-  width: 86%;
-  height: 15%;
-  border-radius: 5px;
-}
-input {
-  color: hsl(231, 7%, 60%);
+@media screen and (min-width: 376px) {
+  .formulaire {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 5rem;
+    align-items: flex-end;
+  }
+  h1 {
+    font-family: "Roboto";
+    color: hsl(234, 29%, 20%);
+    font-size: 8rem;
+    margin-bottom: 1rem;
+  }
+  p {
+    width: 62%;
+    font-size: 2.2rem;
+    font-family: "Robotobis";
+    margin-top: 1rem;
+  }
+  .list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 62%;
+    height: 20%;
+  }
+  ul li {
+    display: flex;
+    background-image: url(./assets/images/icon-list.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 6rem;
+    font-size: 2.2rem;
+    width: 100%;
+    font-family: "Robotobis";
+  }
+  .aftersubmit {
+    display: none;
+    flex-direction: column;
+margin-left: 10rem;
+    width: 50%;
+  }
+  .dismiss{
+    width: 50%;
+  }
+  .message{
+    width: 60%;
+  }
+  .img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .imgdesk {
+    width: 90%;
+    height: 90%;
+  }
 
-  border-color: hsl(231, 7%, 60%);
-}
-button {
-  background-color: hsl(234, 29%, 20%);
-  color: hsl(0, 0%, 100%);
-}
-button:hover{
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 62%;
+  }
+  label,
+  input {
+    display: flex;
+    align-items: center;
+  }
+  label,
+  input,
+  button {
+    height: 4rem;
+    border-radius: 5px;
+    height: 5rem;
+  }
+  label {
+    width: 100%;
+    font-size: 1.8rem;
+    font-family: "Roboto";
+  }
+  input {
+    color: hsl(231, 7%, 60%);
+    width: 100%;
+    border-color: hsl(231, 7%, 60%);
+    font-size: 2.2rem;
+    font-family: "Robotobis";
+  }
+  input:hover {
+    border-color: hsl(234, 29%, 20%);
+  }
+  button {
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    margin-top: 2rem;
+    font-size: 2.2rem;
+    font-family: "Robotobis";
+  }
+  button:hover {
     background-color: tomato;
     border-color: tomato;
+  }
+}
+@media screen and (max-width: 375px) {
+  .screen{
+    background-image: url("./assets/images/illustration-sign-up-mobile.svg");
+    background-repeat: no-repeat;
+  }
+  .text{
+    margin-top: 17rem;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 1.5rem;
+    flex-direction: column;
+  }
+  .img {
+    display: none;
+  }
+  .aftersubmit {
+    display: none;
+  }
+  h1{
+    font-family: "Roboto";
+    color: hsl(234, 29%, 20%);
+  }
+  p{
+    font-size: 1rem;
+    width: 90%;
+    font-family: "Robotobis";
+  }
+  .list{
+    
+    display: flex;
+    flex-direction: column;
+   padding-left: 0;
+  }
+  ul li{
+    display: flex;
+    background-image: url(./assets/images/icon-list.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 2.5rem;
+    font-family: "Robotobis";
+   height: 1rem;
+   font-size: 1rem;
+   align-items: center;
+   margin-bottom: 2rem;
+
+  }
+  form{
+    display: flex;
+    flex-direction:column ;
+  } 
+  label,
+  input,
+  button {
+    height: 3rem;
+    border-radius: 5px;
+    width: 90%;
+    
+  }
+  label{
+    font-family: "Roboto";
+    font-size: .8rem;
+  }
+  input{
+    font-size: 1rem;
+    font-family: "Robotobis";
+  }
+  button{background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    margin-top: 2rem;
+    font-size: 1rem;
+    font-family: "Robotobis";
+  }
 }
