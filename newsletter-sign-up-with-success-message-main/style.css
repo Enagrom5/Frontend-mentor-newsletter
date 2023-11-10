@@ -19,6 +19,7 @@ body {
   height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: hsl(231, 7%, 60%);
 }
 .bold{
@@ -27,36 +28,44 @@ body {
 @media screen and (min-width: 376px) {
   .formulaire {
     display: flex;
-    width: 70vw;
-    height: 70vh;
+    width: 80%;
+    height: 80%;
     background-color: hsl(0, 0%, 100%);
-    justify-content: center;
+    justify-content: space-between;
+    border-radius: 20px;
   }
   .text {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin-top: 5rem;
-    align-items: flex-end;
+    margin-top: 0rem;
+    justify-content: center;
+    align-items: center;
+    padding-left: 4rem;
+
   }
   h1 {
+    text-align: center;
     font-family: "Roboto";
     color: hsl(234, 29%, 20%);
-    font-size: 8rem;
-    margin-bottom: 1rem;
+    font-size: 7rem;
+    margin-bottom: 0rem;
+    margin-top: 1rem;
   }
   p {
-    width: 62%;
-    font-size: 2.2rem;
+    width: 68%;
+    font-size: 1.8rem;
     font-family: "Robotobis";
     margin-top: 1rem;
+    margin-bottom: 0;
   }
   .list {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 62%;
+    width: 68%;
     height: 20%;
+    padding-left: 0;
   }
   ul li {
     display: flex;
@@ -64,15 +73,30 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     padding-left: 6rem;
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     width: 100%;
     font-family: "Robotobis";
   }
   .aftersubmit {
     display: none;
     flex-direction: column;
-margin-left: 10rem;
-    width: 50%;
+    justify-content: center;
+    width: 40rem;
+    height: 40rem;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 100%);
+    background-image: url("./assets/images/icon-success.svg");
+    background-repeat: no-repeat;
+    background-position:3rem 3rem ;
+    padding-left: 3rem;
+  
+  }
+  .aftersubmit h1{
+    text-align: start;
+    font-size: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    
   }
   .dismiss{
     width: 50%;
@@ -81,14 +105,19 @@ margin-left: 10rem;
     width: 60%;
   }
   .img {
-    width: 100%;
+    width: 60%;
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
   }
   .imgdesk {
-    width: 90%;
+    width: 100%;
     height: 90%;
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    
   }
 
   form {
@@ -96,7 +125,7 @@ margin-left: 10rem;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 62%;
+    width: 68%;
   }
   label,
   input {
@@ -106,20 +135,20 @@ margin-left: 10rem;
   label,
   input,
   button {
-    height: 4rem;
-    border-radius: 5px;
+    height: 3rem;
+    border-radius: 10px;
     height: 5rem;
   }
   label {
     width: 100%;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-family: "Roboto";
   }
   input {
     color: hsl(231, 7%, 60%);
     width: 100%;
     border-color: hsl(231, 7%, 60%);
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     font-family: "Robotobis";
   }
   input:hover {
@@ -130,7 +159,7 @@ margin-left: 10rem;
     color: hsl(0, 0%, 100%);
     width: 100%;
     margin-top: 2rem;
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     font-family: "Robotobis";
   }
   button:hover {
@@ -138,13 +167,14 @@ margin-left: 10rem;
     border-color: tomato;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   .screen{
     background-image: url("./assets/images/illustration-sign-up-mobile.svg");
     background-repeat: no-repeat;
+    background-color:hsl(0, 0%, 100%) ;
   }
   .text{
-    margin-top: 17rem;
+    margin-top: 18rem;
     display: flex;
     justify-content: space-around;
     padding-left: 1.5rem;
@@ -153,8 +183,38 @@ margin-left: 10rem;
   .img {
     display: none;
   }
+  
   .aftersubmit {
     display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 100%);
+    background-image: url("./assets/images/icon-success.svg");
+    background-repeat: no-repeat;
+    background-position:2rem 3rem ;
+    border-radius: 0px;
+    
+  
+  }
+  .aftersubmit h1{
+    padding-left: 1.2rem;
+    font-size: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    
+  }
+  .dismiss{
+    width: 90%;
+    position: relative;
+    bottom: -10rem;
+   
+  }
+  .message{
+    width: 90%;
   }
   h1{
     font-family: "Roboto";
@@ -181,7 +241,7 @@ margin-left: 10rem;
    height: 1rem;
    font-size: 1rem;
    align-items: center;
-   margin-bottom: 2rem;
+   margin-bottom: 1rem;
 
   }
   form{
