@@ -166,12 +166,23 @@ body {
     background-color: tomato;
     border-color: tomato;
   }
+  .error{
+    display: flex;
+    justify-content: flex-end;
+    font-family: "Roboto";
+    font-size: 1.5rem;
+    color:tomato;
+    margin-top: 0;
+    padding-left: 4rem;
+    
+  }
 }
 @media screen and (max-width: 376px) {
   .screen{
     background-image: url("./assets/images/illustration-sign-up-mobile.svg");
     background-repeat: no-repeat;
     background-color:hsl(0, 0%, 100%) ;
+    
   }
   .text{
     margin-top: 18rem;
@@ -183,7 +194,13 @@ body {
   .img {
     display: none;
   }
-  
+  .error{
+    display: inline;
+    margin-left: 6rem;
+    font-family: "Roboto";
+    font-size: .8rem;
+    color:tomato
+  }
   .aftersubmit {
     display: none;
     flex-direction: column;
@@ -247,6 +264,7 @@ body {
   form{
     display: flex;
     flex-direction:column ;
+    
   } 
   label,
   input,
